@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('install Spectral') {
       steps {
-        sh 'curl -L "https://get.spectralops.io/latest/x/sh?dsn=$SPECTRAL_DSN" | sh'
+        sh 'curl -L "https://get.spectralops.io/latest/x/sh?dsn=https://spu-8656aeb0678849c3a10a8fe60a670813@spectral-us.checkpoint.com" | sh'
       }
     }
     stage('scan for issues') {
