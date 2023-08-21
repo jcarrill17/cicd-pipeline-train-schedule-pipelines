@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('install Spectral') {
       steps {
-        sh "curl -L "https://get.spectralops.io/latest/x/sh?dsn=$SPECTRAL_DSN" | sh" 
+        sh 'curl -L "https://get.spectralops.io/latest/x/sh?dsn=$SPECTRAL_DSN" | sh'
       }
     }
     stage('scan for issues') {
